@@ -15,20 +15,20 @@ If you've spent more than a few hours on this problem, we suggest that you move 
 If you have time, come back to this problem after you've had a break and cleared your head.'''
 
 def main():
-s = raw_input()
-maxlen = 0
-current = s[0]
-longest = s[0]
+    s = raw_input()
+    maxlen = 0
+    current = s[0]
+    longest = s[0]
 
-for i in range(len(s) - 1):
-    if s[i+1] >= s[i]:
-        current = current + s[i+1]
-        if len(current) > maxlen:
-            maxlen = len(current)
-            longest = current
-    else:
-        current = s[i+1]
+    for i in range(len(s) - 1):
+        if s[i+1] >= s[i]:
+            current = current + s[i+1]
+            if len(current) > maxlen:
+                maxlen = len(current)
+                longest = current
+        else:
+            current = s[i+1]
 
-    i += 1
+        i += 1
 
-print(longest)
+    print(longest)
