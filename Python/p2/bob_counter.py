@@ -4,14 +4,12 @@ Write a program that prints the number of times the string 'bob' occurs in s. Fo
 
 Number of times bob occurs is: 2'''
 
-def main():
-    s = raw_input()
+s = input()
+sub = 'bob'
+count = 0
 
-    sub = 'bob'
-    count = 0
+for i in range(len(s)):
+    if s[i:i+3] == sub:
+        count = count + 1
 
-    for i in range(len(s)):
-        if s[i:i+3] == sub:
-            count = count + 1
-
-    print(str(count))
+print(str(count))

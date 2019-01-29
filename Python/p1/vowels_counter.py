@@ -4,17 +4,14 @@
 
 #Number of vowels: 5
 
-def main():
-        s = raw_input()
-# the input string is in s
-# remove pass and start your code here
-        count = 0
+s = input()
+count = 0
 
-        for c in s:
-                if(c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == u):
-                        count = count + 1
+for c in s:
+        if(c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u'):
+                count = count + 1
 
-        print(count)
+print(count)
 	
         
         
