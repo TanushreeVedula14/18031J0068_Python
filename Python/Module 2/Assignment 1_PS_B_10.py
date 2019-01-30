@@ -1,16 +1,19 @@
 str = input()
 
 dict = {}
-count = 0
 
-for i in str:
-    if i in dict:
-        count += 1
-        list[i] += i
-        dict(count,list)
+for i in range(len(str)):
+    if str[i] in dict:
+        continue
     else:
-        count = 1
-        list[i] += i
-        dict(count,list)
+        dict[str[i]] = str.count(str[i])
         
-print(dict)
+dict1 = {}
+
+for key, value in dict.items():
+    if value in dict1:
+        dict1[value].append(key)
+    else:
+        dict1[value] = [key]
+        
+print(dict1)
