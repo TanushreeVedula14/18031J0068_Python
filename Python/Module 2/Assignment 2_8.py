@@ -3,18 +3,18 @@
 # squirrel_play(95, True) → True
 
 def squirrel_play(num,is_status):
-    if (num > 60 and num < 90) and is_status :
-        print("If")
+    if (num > 60 and num < 90) and is_status == "False" :
+        #print("If")
         return "True"
-    elif (num > 60 and num < 100) and is_status:
-        print("Elif")
+    elif (num > 60 and num < 100) and is_status == "True":
+        #print("Elif")
         return "True"
     else:
-        print("Else")
+        #print("Else")
         return "False"
 
 num = int(input("Enter temperature = "))
-is_status = bool(input("Enter status = "))
+is_status = input("Enter status = ")
 
 result = squirrel_play(num,is_status)
 
