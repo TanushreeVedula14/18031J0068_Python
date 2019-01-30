@@ -4,9 +4,7 @@ Write a program that prints the number of times the string 'bob' occurs in s. Fo
 
 Number of times bob occurs is: 2'''
 
-def main():
-s = raw_input()
-
+s = input()
 sub = 'bob'
 count = 0
 

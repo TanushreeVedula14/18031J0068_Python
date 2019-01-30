@@ -14,8 +14,7 @@ Note: This problem may be challenging. We encourage you to work smart.
 If you've spent more than a few hours on this problem, we suggest that you move on to a different part of the course.
 If you have time, come back to this problem after you've had a break and cleared your head.'''
 
-def main():
-s = raw_input()
+s = input()
 maxlen = 0
 current = s[0]
 longest = s[0]
